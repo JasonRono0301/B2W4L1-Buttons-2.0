@@ -34,6 +34,8 @@ button2.addEventListener('click',function(){
     if(button2.style.backgroundColor == "red"){
         button1.style.backgroundColor = "green";
         button3.style.backgroundColor = "green";
+        button1.disabled = false;
+        button2.disabled = true;
     } 
 
 });
@@ -45,5 +47,6 @@ button3.addEventListener('click',function(){
     if(button3.style.backgroundColor == "red"){
         button1.style.backgroundColor = "green";
         button2.style.backgroundColor = "green";
+        button2.disabled = false;
     } 
 });
