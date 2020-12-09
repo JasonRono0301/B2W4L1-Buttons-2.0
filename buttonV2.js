@@ -10,17 +10,20 @@ var button3 = document.getElementById("button3");
 var container = document.getElementById('container');
 
 //Variablen voor de counters.
-var count1 = 0;
-var count2 = 0;
-var count3 = 0;
+var count1 = 1;
+var count2 = 1;
+var count3 = 1;
 
 button1.addEventListener('click',function(){
-    button1.innerHTML = count1++;//Elke keer als er op 1 van de buttons worden gedrukt gaat er steeds 1 bij komen.
+    button1.innerHTML = count1++;  //Elke keer als er op 1 van de buttons worden gedrukt gaat er steeds 1 bij komen.
     button1.style.backgroundColor = "red";
 
+    //If statement als er een button rood word worden de rest van de buttons groen.
     if(button1.style.backgroundColor == "red"){
         button2.style.backgroundColor = "green";
         button3.style.backgroundColor = "green";
+        button1.disabled = true;
+        button2.disabled = false;
     } 
 });
 
