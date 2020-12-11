@@ -36,6 +36,7 @@ button2.addEventListener('click',function(){
         button3.style.backgroundColor = "green";
         button1.disabled = false;
         button2.disabled = true;
+        button3.disabled = false;
     } 
 
 });
@@ -48,5 +49,6 @@ button3.addEventListener('click',function(){
         button1.style.backgroundColor = "green";
         button2.style.backgroundColor = "green";
         button2.disabled = false;
+        button3.disabled = true;
     } 
 });
